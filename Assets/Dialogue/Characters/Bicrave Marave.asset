@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c61a952331cf64e949a9ad9407db5c, type: 3}
+  m_Name: Bicrave Marave
+  m_EditorClassIdentifier: 
+  portraits:
+  - sprite: {fileID: 21300000, guid: fddfd303bfdbcc14796d2c4330df9c52, type: 3}
+    name: Bonk
+  - sprite: {fileID: 21300000, guid: 2392b0d2f82ce5c4cbf8605a3632ecab, type: 3}
+    name: Think
+  - sprite: {fileID: 21300000, guid: f9699f6455e0d3a41b3311b9369c0e2a, type: 3}
+    name: Thonk
+  characterName: Bicrave Marave
+  color: {r: 0.82727355, g: 0.5158419, b: 0.8490566, a: 0}
