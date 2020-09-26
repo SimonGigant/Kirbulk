@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public enum MaraveState { Idle, Cutscene }
+public enum ActionState { None = 0, CarryWatercan = 1, Water = 2 }
 
 public class MaraveController : MonoBehaviour
 {
@@ -12,12 +13,16 @@ public class MaraveController : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer rend;
     private Animator animator;
+    private ActionState prevActionState;
 
     [HideInInspector] public MaraveState state;
+    private ActionState actionState;
 
     private void Start()
     {
         state = MaraveState.Idle;
+        actionState = ActionState.None;
+        prevActionState = actionState;
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
@@ -26,6 +31,21 @@ public class MaraveController : MonoBehaviour
     private void Update()
     {
         InputManagement();
+        ChangeAnimator();
+    }
+
+    private void ChangeAnimator()
+    {
+        if (Keyboard.current.digit1Key.isPressed)
+            actionState = ActionState.CarryWatercan;
+        if (Keyboard.current.digit2Key.isPressed)
+            actionState = ActionState.Water;
+
+        if (actionState != prevActionState)
+            animator.SetTrigger("ChangingAction");
+        animator.SetInteger("Action", (int)actionState);
+
+        prevActionState = actionState;
     }
 
     private void InputManagement()
