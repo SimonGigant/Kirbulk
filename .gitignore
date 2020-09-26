@@ -61,3 +61,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Idea
+*.idea
+Assets/Plugins.meta
+Assets/Plugins/Editor.meta
