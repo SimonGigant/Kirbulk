@@ -1,0 +1,25 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\PROJETS EN COURS\\ENJAM 2020\\Wwise\\ENJAM 2020\\",
+   "SourceFilesRoot": "D:\\PROJETS EN COURS\\ENJAM 2020\\Wwise\\ENJAM 2020\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\PROJETS EN COURS\\ENJAM 2020\\Kirbulk\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\PROJETS EN COURS\\ENJAM 2020\\Wwise\\ENJAM 2020\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   }
+  ]
+ }
+}
