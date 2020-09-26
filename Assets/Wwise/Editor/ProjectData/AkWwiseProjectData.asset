@@ -12,14 +12,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01957b74a52689c49b9afcc893f6dd2e, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: f5d4609de9958e42a38cc58f2aca3527
+    GuidInternal: 
+    m_lastTime: -8586004993277621617
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: c63a8a3522024b4380df9a9d766c1df9
+    GuidInternal: 
+    m_lastTime: -8586004993277701395
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  - PhysicalPath: Master-Mixer Hierarchy\Kirbulk.wwu
+    ParentPath: Kirbulk
+    guid: 80ba091f736bab4dbb0976257a17d7e3
+    GuidInternal: 
+    m_lastTime: -8586004991224939372
+    List:
+    - name: Ambiance
+      guid: 43a1fa2e41ddfa4cb438df3fbc6c2a57
+      id: 2981377429
+      PathAndIcons:
+      - ElementName: Kirbulk
+        ObjectType: 12
+      - ElementName: Ambiance
+        ObjectType: 2
+      Path: Kirbulk\Ambiance
+    - name: FX
+      guid: 1db92abd7075274b9891aee0307196be
+      id: 1802970371
+      PathAndIcons:
+      - ElementName: Kirbulk
+        ObjectType: 12
+      - ElementName: FX
+        ObjectType: 2
+      Path: Kirbulk\FX
+    - name: Music
+      guid: c32ec01143fd834f9ec48fa34e0860ee
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Kirbulk
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 2
+      Path: Kirbulk\Music
+    - name: Voice
+      guid: c8c85daa735c5040bff1d57623bbbbb9
+      id: 3170124113
+      PathAndIcons:
+      - ElementName: Kirbulk
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 2
+      Path: Kirbulk\Voice
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 5791d807da12cf439d13306bea98ffbc
+    GuidInternal: 
+    m_lastTime: -8586004993277661508
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: b2c59c705b3045479b9f10319cca5d54
+    GuidInternal: 
+    m_lastTime: -8586004993277761217
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: a028ee7b04c25a4696697289fd40ec97
+    GuidInternal: 
+    m_lastTime: -8586004993277641557
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 43111bd5fa9fda489cf1d046e5d0bb90
+    GuidInternal: 
+    m_lastTime: -8586004993277681456
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: a35e4914d275df4aa1bc3727d5e3abc2
+    GuidInternal: 
+    m_lastTime: -8586004993277731323
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: c5a96a59a28a59478d4e3eda6418fb4e
+    GuidInternal: 
+    m_lastTime: -8586004993277501923
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
