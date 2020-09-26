@@ -19,7 +19,7 @@ MonoBehaviour:
     emotionID: 0
     mirror: 0
     leftSide: 0
-    text: Coucou
+    text: "Coucou je suis votre *cher* pr\xE9sident ~Jacques Chirac~"
     emphasis: 
     size: 
     effect: 
@@ -30,7 +30,8 @@ MonoBehaviour:
     emotionID: 0
     mirror: 0
     leftSide: 0
-    text: c moi
+    text: "c moi >>effectivement je suis d\xE9c\xE9d\xE9 mais je suis un ancien pr\xE9sident
+      de la r\xE9publique ^fran\xE7aise^"
     emphasis: 
     size: 
     effect: 
