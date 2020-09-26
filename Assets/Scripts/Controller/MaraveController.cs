@@ -11,6 +11,7 @@ public class MaraveController : MonoBehaviour
     private float moveSpeed = 15f;
     private Rigidbody2D rb;
     private SpriteRenderer rend;
+    private Animator animator;
 
     [HideInInspector] public MaraveState state;
 
@@ -19,6 +20,7 @@ public class MaraveController : MonoBehaviour
         state = MaraveState.Idle;
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -37,7 +39,13 @@ public class MaraveController : MonoBehaviour
         keyboardDirection.x = rightValue - leftValue;
         keyboardDirection.y = upValue - downValue;
         if(keyboardDirection.x != 0f || keyboardDirection.y != 0f)
+        {
             OnMove(keyboardDirection);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0f);
+        }
     }
 
     private void OnMove(Vector2 inputValue)
@@ -49,6 +57,7 @@ public class MaraveController : MonoBehaviour
                 bool right = inputValue.x >= 0f;
                 rend.flipX = !right;
             }
+            animator.SetFloat("Speed", inputValue.magnitude);
 
             Move(inputValue);
         }
