@@ -19,7 +19,6 @@ public class MaraveController : MonoBehaviour
         state = MaraveState.Idle;
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<SpriteRenderer>();
-        
     }
 
     private void Update()
@@ -53,6 +52,11 @@ public class MaraveController : MonoBehaviour
 
             Move(inputValue);
         }
+    }
+
+    public bool ActionPress()
+    {
+        return Keyboard.current.spaceKey.isPressed;
     }
 
     public Vector2 Position2D()
