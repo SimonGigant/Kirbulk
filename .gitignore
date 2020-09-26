@@ -61,7 +61,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#WWise gitignore
+.cache/
+*.akd
+*.validationcache
+[Aa]ssets/WwiseSettings.xml
+[Aa]ssets/WwiseSettings.xml.meta
 # Idea
 *.idea
 Assets/Plugins.meta
 Assets/Plugins/Editor.meta
+

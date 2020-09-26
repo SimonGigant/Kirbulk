@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	678776388	Lofi Jazz Test Rapidos	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Lofi Jazz Test Rapidos_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Music\Lofi Jazz Test Rapidos		12373692
+
