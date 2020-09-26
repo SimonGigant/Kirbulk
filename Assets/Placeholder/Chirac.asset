@@ -31,7 +31,8 @@ MonoBehaviour:
     mirror: 0
     leftSide: 0
     text: "c moi >>effectivement je suis d\xE9c\xE9d\xE9 mais je suis un ancien pr\xE9sident
-      de la r\xE9publique ^fran\xE7aise^"
+      de la r\xE9publique << \xB0fran\xE7aise\xB0 ok les ptits potes, mangez des
+      pommes"
     emphasis: 
     size: 
     effect: 
