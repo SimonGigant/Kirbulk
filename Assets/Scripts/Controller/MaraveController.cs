@@ -17,6 +17,7 @@ public class MaraveController : MonoBehaviour
 
     [HideInInspector] public MaraveState state;
     private ActionState actionState;
+    //public bool ???????????????;
 
     private void Start()
     {
@@ -32,14 +33,23 @@ public class MaraveController : MonoBehaviour
     {
         InputManagement();
         ChangeAnimator();
+        if (Keyboard.current.enterKey.isPressed)
+            UnlockWatercan();
+        if (Keyboard.current.backspaceKey.isPressed)
+            RemoveWatercan();
     }
 
     private void ChangeAnimator()
     {
-        if (Keyboard.current.digit1Key.isPressed)
-            actionState = ActionState.CarryWatercan;
-        if (Keyboard.current.digit2Key.isPressed)
+        bool pressedAction = ActionPressedButton(out bool release);
+        if (pressedAction && actionState == ActionState.CarryWatercan)
+        {
             actionState = ActionState.Water;
+        }
+        else if(release && actionState == ActionState.Water)
+        {
+            actionState = ActionState.CarryWatercan;
+        }
 
         if (actionState != prevActionState)
             animator.SetTrigger("ChangingAction");
@@ -88,9 +98,37 @@ public class MaraveController : MonoBehaviour
         return Keyboard.current.spaceKey.isPressed;
     }
 
+    private bool pressedLastFrame = false;
+    public bool ActionPressedButton(out bool release)
+    {
+        release = false;
+        bool res = false;
+        if(!pressedLastFrame && ActionPress())
+        {
+            res = true;
+            pressedLastFrame = true;
+        }
+        else if(pressedLastFrame && !ActionPress())
+        {
+            release = true;
+        }
+        pressedLastFrame = ActionPress();
+        return res;
+    }
+
     public Vector2 Position2D()
     {
         return new Vector2(transform.position.x, transform.position.y);
+    }
+
+    public void UnlockWatercan()
+    {
+        actionState = ActionState.CarryWatercan;
+    }
+
+    public void RemoveWatercan()
+    {
+        actionState = ActionState.None;
     }
 
     //moveValue must have a norm <= 1

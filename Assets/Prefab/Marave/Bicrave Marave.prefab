@@ -106,8 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5946e2d911a2a644a8efb669e1447222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterController: {fileID: 22100000, guid: 0d8d800245d8d8b47b36a3eecc709629, type: 2}
-  carryWaterController: {fileID: 22100000, guid: a9f99e2901a0c7f4fb38a4da9637e608, type: 2}
   state: 0
 --- !u!1 &3320197319645074379
 GameObject:
@@ -224,3 +222,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e027fecf4194ae4d9b65d7a6d8129e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stomp: {fileID: 1668913055568671913, guid: 580c0b0dab5b9b2479fa7b4097fb1929, type: 3}
