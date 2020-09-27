@@ -28,6 +28,8 @@ namespace AK
         static const AkUniqueID PLAY_SFX_BUMP_TREE = 2514485881U;
         static const AkUniqueID PLAY_SFX_BUTTERFLY_EXPLOSION = 1348534859U;
         static const AkUniqueID PLAY_SFX_EXPLOSION = 2514707895U;
+        static const AkUniqueID PLAY_SFX_LAMP_BUMP = 2184698803U;
+        static const AkUniqueID PLAY_SFX_LAMP_GROUND_IMPACT = 2438257399U;
         static const AkUniqueID PLAY_SFX_SMASH_GAME = 3053734711U;
         static const AkUniqueID PLAY_SFX_SUCCESS_01 = 1064155259U;
         static const AkUniqueID PLAY_UI_VALIDATION = 745563126U;

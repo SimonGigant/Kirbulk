@@ -9,6 +9,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1348534859	Play_SFX_Butterfly_Explosion			\Default Work Unit\SFX\Play_SFX_Butterfly_Explosion	
 	1708987556	Play_SFX_Blast_Zone_Smash			\Default Work Unit\SFX\Play_SFX_Blast_Zone_Smash	
 	1736684395	Play_Footsteps_Gravel			\Default Work Unit\Character\Play_Footsteps_Gravel	
+	2184698803	Play_SFX_Lamp_Bump			\Default Work Unit\SFX\Play_SFX_Lamp_Bump	
+	2438257399	Play_SFX_Lamp_Ground_Impact			\Default Work Unit\SFX\Play_SFX_Lamp_Ground_Impact	
 	2514485881	Play_SFX_Bump_Tree			\Default Work Unit\SFX\Play_SFX_Bump_Tree	
 	2514707895	Play_SFX_Explosion			\Default Work Unit\SFX\Play_SFX_Explosion	
 	2659015962	Play_Footsteps_Grass_Soil_Hard			\Default Work Unit\Character\Play_Footsteps_Grass_Soil_Hard	
@@ -23,6 +25,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	6602855	Footsteps Grass & Soil 10	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil 10_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil\Footsteps Grass & Soil 10		239088
 	11282335	Footsteps Grass & Soil Hard 07	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil Hard 07_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil Hard\Footsteps Grass & Soil Hard 07		76892
 	17595548	Footsteps Gravel 10	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Gravel 10_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Gravel\Footsteps Gravel 10		85128
+	18600948	Bump Lamp	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Bump Lamp_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\SFX\SFX Lamp Bump\Bump Lamp		106092
 	28796390	Footsteps Grass & Soil 03	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil 03_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil\Footsteps Grass & Soil 03		239492
 	31112851	Footsteps Grass & Soil Hard 04	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil Hard 04_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil Hard\Footsteps Grass & Soil Hard 04		73432
 	60719444	Footsteps Grass & Soil 01	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil 01_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil\Footsteps Grass & Soil 01		242996
@@ -72,9 +75,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	677695412	Amb_Countryside_Day_Flying_Insects_Birds_LP	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Amb_Countryside_Day_Flying_Insects_Birds_LP_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Ambiance\AMB Centre Ville\Amb_Countryside_Day_Flying_Insects_Birds_LP		23040064
 	678776388	Lofi Jazz Test Rapidos	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Lofi Jazz Test Rapidos_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Music\Lofi Jazz Test Rapidos		12373692
 	731376626	Footsteps Grass & Soil 08	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil 08_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil\Footsteps Grass & Soil 08		236312
+	766094022	Lamp Ground Impact 01	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Lamp Ground Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\SFX\SFX Lamp Ground Impact\Lamp Ground Impact 01		358776
 	778746678	Dog Pant Loop	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Dog Pant Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Kirbulk\PNJ\Dog\Dog Happy\Dog Pant Loop\Dog Pant Loop		1612532
 	785315762	Footsteps Gravel 01	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Gravel 01_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Gravel\Footsteps Gravel 01		72368
 	809057937	Footsteps Grass & Soil Hard 03	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil Hard 03_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil Hard\Footsteps Grass & Soil Hard 03		77976
+	842920881	Lamp Ground Impact 02	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Lamp Ground Impact 02_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\SFX\SFX Lamp Ground Impact\Lamp Ground Impact 02		358776
 	851132267	Footsteps Grass 11	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass 11_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass\Footsteps Grass 11		260260
 	853360501	Footsteps Grass & Soil 04	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\Footsteps Grass & Soil 04_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\Character\Footsteps Grass & Soil\Footsteps Grass & Soil 04		239020
 	854199478	UI_Validation	D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\SFX\UI Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Kirbulk\UI\UI_Validation		100852

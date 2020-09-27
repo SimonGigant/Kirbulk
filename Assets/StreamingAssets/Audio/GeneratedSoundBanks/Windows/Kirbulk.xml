@@ -333,6 +333,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2184698803" Name="Play_SFX_Lamp_Bump" ObjectPath="\Events\Default Work Unit\SFX\Play_SFX_Lamp_Bump" GUID="{711A71A0-B3B1-47D5-97D6-0D4F4279952F}" DurationType="OneShot" DurationMin="0.552229" DurationMax="0.552229">
+					<IncludedMemoryFiles>
+						<File Id="18600948" Language="SFX">
+							<ShortName>Bump Lamp.wav</ShortName>
+							<Path>SFX\Bump Lamp_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2438257399" Name="Play_SFX_Lamp_Ground_Impact" ObjectPath="\Events\Default Work Unit\SFX\Play_SFX_Lamp_Ground_Impact" GUID="{5F492AE7-FDFC-442F-B656-4E9E6C3EFD73}" DurationType="OneShot" DurationMin="1.868292" DurationMax="1.868292">
+					<IncludedMemoryFiles>
+						<File Id="766094022" Language="SFX">
+							<ShortName>Lamp Ground Impact.wav</ShortName>
+							<Path>SFX\Lamp Ground Impact_10C4C929.wem</Path>
+						</File>
+						<File Id="842920881" Language="SFX">
+							<ShortName>Lamp Ground Impact 02.wav</ShortName>
+							<Path>SFX\Lamp Ground Impact 02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3053734711" Name="Play_SFX_Smash_Game" ObjectPath="\Events\Default Work Unit\SFX\Play_SFX_Smash_Game" GUID="{2C0F8119-9D47-4CB9-9B86-B04AFFDB80A7}" DurationType="OneShot" DurationMin="1.196417" DurationMax="1.196417">
 					<IncludedMemoryFiles>
 						<File Id="1068693823" Language="SFX">
