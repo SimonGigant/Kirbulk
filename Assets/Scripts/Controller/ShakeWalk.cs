@@ -15,4 +15,10 @@ public class ShakeWalk : MonoBehaviour
         SoundManager.PlaySound("Play_Footsteps_Gravel", gameObject);
         //SoundManager.PlaySound("Play_Footsteps_Grass_Soil_Hard", gameObject);
     }
+
+    public void BigShake()
+    {
+        Gamefeel.Instance.InitScreenshake(1f, 4f);
+        Gamefeel.Instance.InitFreezeFrame(0.1f, 0.01f);
+    }
 }
