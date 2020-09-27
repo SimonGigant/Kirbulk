@@ -13,11 +13,12 @@ public class MaraveController : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer rend;
     private Animator animator;
+    private ParticleSystem particleSys;
     private ActionState prevActionState;
 
     [HideInInspector] public MaraveState state;
     private ActionState actionState;
-    //public bool ???????????????;
+    public bool Mode_grosBiscotos = true;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class MaraveController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
+        particleSys = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Update()
@@ -51,6 +53,11 @@ public class MaraveController : MonoBehaviour
             actionState = ActionState.CarryWatercan;
         }
 
+        if (actionState == ActionState.Water && !particleSys.isPlaying)
+            particleSys.Play();
+        else if (particleSys.isPlaying)
+            particleSys.Stop();
+        
         if (actionState != prevActionState)
             animator.SetTrigger("ChangingAction");
         animator.SetInteger("Action", (int)actionState);
