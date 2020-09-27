@@ -45,10 +45,10 @@ public class SoundManager : MonoBehaviour
 
     public static void PlaySound(string eventName, GameObject go)
     {
-        AkSoundEngine.PostEvent(eventName, go);
+        if (!IsEventPlayingOnGameObject(eventName, go))
+             AkSoundEngine.PostEvent(eventName, go);
     }
-
-
+    
     public static bool IsEventPlayingOnGameObject(string eventName, GameObject go)
     {
         uint testEventId = AkSoundEngine.GetIDFromString(eventName);

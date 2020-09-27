@@ -13,7 +13,6 @@ public class ShakeWalk : MonoBehaviour
         Instantiate(stomp, transform.position + new Vector3(1f * sign, 1.5f, 0.01f), transform.rotation);
 
         SoundManager.PlaySound("Play_Footsteps_Gravel", gameObject);
-        //SoundManager.PlaySound("Play_Footsteps_Grass_Soil_Hard", gameObject);
     }
 
     public void BigShake()
