@@ -11,6 +11,7 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] private bool singleTimeInteraction;
     private bool interacted = false;
+    public bool pet = false;
 
     /*[SerializeField] private Material highlight;
     private Material basicMaterial;*/
@@ -34,13 +35,15 @@ public class Interactable : MonoBehaviour
         if (other.TryGetComponent<MaraveController>(out MaraveController marave))
         {
             if (marave.ActionPress() && (!singleTimeInteraction || !interacted))
-                Use();
+                Use(marave);
         }
     }
 
-    private void Use()
+    private void Use(MaraveController marave)
     {
         interacted = true;
         whenInteracted.Invoke();
+        if (pet)
+            marave.Pet(transform.position.x > marave.transform.position.x);
     }
 }

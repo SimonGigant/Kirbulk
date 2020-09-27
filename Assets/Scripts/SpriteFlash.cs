@@ -53,10 +53,10 @@ public class SpriteFlash : MonoBehaviour
         */
 
         // DEBUG: Input used for test only
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && !isFlashing && !isBlinking)
+        /*if (Keyboard.current.spaceKey.wasPressedThisFrame && !isFlashing && !isBlinking)
         {
             Flash();
-        }
+        }*/
     }
 
     /// <summary>
