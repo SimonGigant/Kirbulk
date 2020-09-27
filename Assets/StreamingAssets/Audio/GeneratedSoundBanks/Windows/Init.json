@@ -18,7 +18,33 @@
     "Language": "SFX",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk"
+    "Path": "Init.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "1802970371",
+      "Name": "Fx",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Fx",
+      "GUID": "{739AA26E-D574-475C-B8A9-0EB151FFDFCE}"
+     },
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Ambiance",
+      "GUID": "{443D0B2B-5DC1-414C-9F57-344F92EB8664}"
+     },
+     {
+      "Id": "3170124113",
+      "Name": "Voice",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Voice",
+      "GUID": "{842B278E-EE70-40B5-B7BB-7C2786794C3F}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Music",
+      "GUID": "{B2E66CB4-D079-428C-B05E-5E1AEB181E5B}"
+     }
+    ]
    }
   ]
  }

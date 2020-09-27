@@ -21,7 +21,33 @@
     "Language": "SFX",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk"
+    "Path": "Init.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "1802970371",
+      "Name": "Fx",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Fx",
+      "GUID": "{739AA26E-D574-475C-B8A9-0EB151FFDFCE}"
+     },
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Ambiance",
+      "GUID": "{443D0B2B-5DC1-414C-9F57-344F92EB8664}"
+     },
+     {
+      "Id": "3170124113",
+      "Name": "Voice",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Voice",
+      "GUID": "{842B278E-EE70-40B5-B7BB-7C2786794C3F}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Kirbulk\\Master Audio\\Music",
+      "GUID": "{B2E66CB4-D079-428C-B05E-5E1AEB181E5B}"
+     }
+    ]
    },
    {
     "Id": "1744675613",
@@ -32,9 +58,471 @@
     "Path": "Kirbulk.bnk",
     "IncludedEvents": [
      {
+      "Id": "261130629",
+      "Name": "Play_AMB_Centre_Ville",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\Play_AMB_Centre_Ville",
+      "GUID": "{A30CA320-C139-4A9A-A1BE-A71393528B0D}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "677695412",
+        "Language": "SFX",
+        "ShortName": "Amb_Countryside_Day_Flying_Insects_Birds_LP.wav",
+        "Path": "SFX\\Amb_Countryside_Day_Flying_Insects_Birds_LP_10C4C929.wem"
+       },
+       {
+        "Id": "1057932327",
+        "Language": "SFX",
+        "ShortName": "Ambiance - Centre-Ville.wav",
+        "Path": "SFX\\Ambiance - Centre-Ville_264C5A2C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2726245810",
+      "Name": "Play_AMB_Garden_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\Play_AMB_Garden_Forest",
+      "GUID": "{DB57A40F-87FD-4647-A005-7B31CE1AFF0A}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "410304528",
+        "Language": "SFX",
+        "ShortName": "Ambiance - Jardin.wav",
+        "Path": "SFX\\Ambiance - Jardin_F2EF320B.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2889920656",
+      "Name": "Play_AMB_Parc_Enfant",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\Play_AMB_Parc_Enfant",
+      "GUID": "{27B616D8-7670-447F-9151-BA36E3CA7522}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "70443464",
+        "Language": "SFX",
+        "ShortName": "Ambiance - Parc Enfant.wav",
+        "Path": "SFX\\Ambiance - Parc Enfant_C9B7B37C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1117641172",
+      "Name": "Play_Dog_Caresse_Happy",
+      "ObjectPath": "\\Events\\Default Work Unit\\PNJ\\Play_Dog_Caresse_Happy",
+      "GUID": "{452BC06C-EE13-47F2-B280-419A8D7EC196}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.886125",
+      "DurationMax": "1.886125",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "629535004",
+        "Language": "SFX",
+        "ShortName": "Dog Caresse Happy.wav",
+        "Path": "SFX\\Dog Caresse Happy_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3743348295",
+      "Name": "Play_Dog_Happy",
+      "ObjectPath": "\\Events\\Default Work Unit\\PNJ\\Play_Dog_Happy",
+      "GUID": "{51CC28F4-63AC-4A15-A3C3-EAF39EC89FE8}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "65408189",
+        "Language": "SFX",
+        "ShortName": "Dog Barking 03.wav",
+        "Path": "SFX\\Dog Barking 03_10C4C929.wem"
+       },
+       {
+        "Id": "84400720",
+        "Language": "SFX",
+        "ShortName": "Dog Barking 05.wav",
+        "Path": "SFX\\Dog Barking 05_10C4C929.wem"
+       },
+       {
+        "Id": "158057729",
+        "Language": "SFX",
+        "ShortName": "Dog Barking 04.wav",
+        "Path": "SFX\\Dog Barking 04_10C4C929.wem"
+       },
+       {
+        "Id": "410463119",
+        "Language": "SFX",
+        "ShortName": "Dog Barking 01.wav",
+        "Path": "SFX\\Dog Barking 01_10C4C929.wem"
+       },
+       {
+        "Id": "494887940",
+        "Language": "SFX",
+        "ShortName": "Dog Barking 02.wav",
+        "Path": "SFX\\Dog Barking 02_10C4C929.wem"
+       },
+       {
+        "Id": "778746678",
+        "Language": "SFX",
+        "ShortName": "Dog Pant Loop.wav",
+        "Path": "SFX\\Dog Pant Loop_D79FB2B7.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1142842826",
+      "Name": "Play_Dog_Leash",
+      "ObjectPath": "\\Events\\Default Work Unit\\PNJ\\Play_Dog_Leash",
+      "GUID": "{FCA479EE-90AE-4D39-AF14-634A3A859671}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.286688",
+      "DurationMax": "2.286688",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1042966505",
+        "Language": "SFX",
+        "ShortName": "Dog Leash.wav",
+        "Path": "SFX\\Dog Leash_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "948914500",
+      "Name": "Play_Footsteps_Grass",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Grass",
+      "GUID": "{559CD265-34C5-48BB-A8E9-CCE339937957}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.308875",
+      "DurationMax": "1.484687",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "153668399",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 01.wav",
+        "Path": "SFX\\Footsteps Grass 01_10C4C929.wem"
+       },
+       {
+        "Id": "233169679",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 10.wav",
+        "Path": "SFX\\Footsteps Grass 10_10C4C929.wem"
+       },
+       {
+        "Id": "309383593",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 06.wav",
+        "Path": "SFX\\Footsteps Grass 06_10C4C929.wem"
+       },
+       {
+        "Id": "423361687",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 04.wav",
+        "Path": "SFX\\Footsteps Grass 04_10C4C929.wem"
+       },
+       {
+        "Id": "473212974",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 03.wav",
+        "Path": "SFX\\Footsteps Grass 03_10C4C929.wem"
+       },
+       {
+        "Id": "500828513",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 05.wav",
+        "Path": "SFX\\Footsteps Grass 05_10C4C929.wem"
+       },
+       {
+        "Id": "588347161",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 07.wav",
+        "Path": "SFX\\Footsteps Grass 07_10C4C929.wem"
+       },
+       {
+        "Id": "666151927",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 08.wav",
+        "Path": "SFX\\Footsteps Grass 08_10C4C929.wem"
+       },
+       {
+        "Id": "851132267",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 11.wav",
+        "Path": "SFX\\Footsteps Grass 11_10C4C929.wem"
+       },
+       {
+        "Id": "903534800",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 12.wav",
+        "Path": "SFX\\Footsteps Grass 12_10C4C929.wem"
+       },
+       {
+        "Id": "965949862",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 09.wav",
+        "Path": "SFX\\Footsteps Grass 09_10C4C929.wem"
+       },
+       {
+        "Id": "985939494",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass 02.wav",
+        "Path": "SFX\\Footsteps Grass 02_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "896493602",
+      "Name": "Play_Footsteps_Grass_Soil",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Grass_Soil",
+      "GUID": "{91AC3D68-7856-4AC9-97A8-8B2DE41491C6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.224708",
+      "DurationMax": "1.269750",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "6602855",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 10.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 10_10C4C929.wem"
+       },
+       {
+        "Id": "28796390",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 03.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 03_10C4C929.wem"
+       },
+       {
+        "Id": "60719444",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 01.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 01_10C4C929.wem"
+       },
+       {
+        "Id": "111865083",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 05.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 05_10C4C929.wem"
+       },
+       {
+        "Id": "150414880",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 09.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 09_10C4C929.wem"
+       },
+       {
+        "Id": "152557059",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 07.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 07_10C4C929.wem"
+       },
+       {
+        "Id": "158114782",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 02.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 02_10C4C929.wem"
+       },
+       {
+        "Id": "268470526",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 06.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 06_10C4C929.wem"
+       },
+       {
+        "Id": "302522063",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 11.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 11_10C4C929.wem"
+       },
+       {
+        "Id": "731376626",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 08.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 08_10C4C929.wem"
+       },
+       {
+        "Id": "853360501",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 04.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 04_10C4C929.wem"
+       },
+       {
+        "Id": "889235170",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil 12.wav",
+        "Path": "SFX\\Footsteps Grass & Soil 12_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2659015962",
+      "Name": "Play_Footsteps_Grass_Soil_Hard",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Grass_Soil_Hard",
+      "GUID": "{2F4944EE-F625-4560-8BD9-854F1CA67D62}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.342292",
+      "DurationMax": "0.428271",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "11282335",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 07.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 07_10C4C929.wem"
+       },
+       {
+        "Id": "31112851",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 04.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 04_10C4C929.wem"
+       },
+       {
+        "Id": "74169702",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 02.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 02_10C4C929.wem"
+       },
+       {
+        "Id": "76189581",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 08.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 08_10C4C929.wem"
+       },
+       {
+        "Id": "157291012",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 12.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 12_10C4C929.wem"
+       },
+       {
+        "Id": "233841973",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 06.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 06_10C4C929.wem"
+       },
+       {
+        "Id": "289795876",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 10.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 10_10C4C929.wem"
+       },
+       {
+        "Id": "348253443",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 05.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 05_10C4C929.wem"
+       },
+       {
+        "Id": "356685338",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 11.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 11_10C4C929.wem"
+       },
+       {
+        "Id": "533042902",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 09.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 09_10C4C929.wem"
+       },
+       {
+        "Id": "549034976",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 01.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 01_10C4C929.wem"
+       },
+       {
+        "Id": "809057937",
+        "Language": "SFX",
+        "ShortName": "Footsteps Grass & Soil Hard 03.wav",
+        "Path": "SFX\\Footsteps Grass & Soil Hard 03_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1736684395",
+      "Name": "Play_Footsteps_Gravel",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Gravel",
+      "GUID": "{D99B4983-39BD-4477-8E32-022A07963634}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.365896",
+      "DurationMax": "0.443042",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "17595548",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 10.wav",
+        "Path": "SFX\\Footsteps Gravel 10_10C4C929.wem"
+       },
+       {
+        "Id": "63536030",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 09.wav",
+        "Path": "SFX\\Footsteps Gravel 09_10C4C929.wem"
+       },
+       {
+        "Id": "200742663",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 05.wav",
+        "Path": "SFX\\Footsteps Gravel 05_10C4C929.wem"
+       },
+       {
+        "Id": "219574136",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 07.wav",
+        "Path": "SFX\\Footsteps Gravel 07_10C4C929.wem"
+       },
+       {
+        "Id": "341239014",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 03.wav",
+        "Path": "SFX\\Footsteps Gravel 03_10C4C929.wem"
+       },
+       {
+        "Id": "485820053",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 11.wav",
+        "Path": "SFX\\Footsteps Gravel 11_10C4C929.wem"
+       },
+       {
+        "Id": "504290261",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 02.wav",
+        "Path": "SFX\\Footsteps Gravel 02_10C4C929.wem"
+       },
+       {
+        "Id": "576205403",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 04.wav",
+        "Path": "SFX\\Footsteps Gravel 04_10C4C929.wem"
+       },
+       {
+        "Id": "594153812",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 06.wav",
+        "Path": "SFX\\Footsteps Gravel 06_10C4C929.wem"
+       },
+       {
+        "Id": "631084105",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 12.wav",
+        "Path": "SFX\\Footsteps Gravel 12_10C4C929.wem"
+       },
+       {
+        "Id": "785315762",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 01.wav",
+        "Path": "SFX\\Footsteps Gravel 01_10C4C929.wem"
+       },
+       {
+        "Id": "948760181",
+        "Language": "SFX",
+        "ShortName": "Footsteps Gravel 08.wav",
+        "Path": "SFX\\Footsteps Gravel 08_10C4C929.wem"
+       }
+      ]
+     },
+     {
       "Id": "2932040671",
       "Name": "Play_Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Music",
       "GUID": "{BE1F377B-FF29-4990-87CE-A10A34E4D38A}",
       "DurationType": "OneShot",
       "DurationMin": "70.144920",
@@ -45,6 +533,125 @@
         "Language": "SFX",
         "ShortName": "Lofi Jazz Test Rapidos.wav",
         "Path": "SFX\\Lofi Jazz Test Rapidos_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1708987556",
+      "Name": "Play_SFX_Blast_Zone_Smash",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Blast_Zone_Smash",
+      "GUID": "{7AE4C528-F63E-4FA0-9DBF-868C6DB955B5}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.156145",
+      "DurationMax": "4.156145",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "454950753",
+        "Language": "SFX",
+        "ShortName": "Super Smash Bros - Ultimate Blast Zone Green screen.wav",
+        "Path": "SFX\\Super Smash Bros - Ultimate Blast Zone Green screen_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2514485881",
+      "Name": "Play_SFX_Bump_Tree",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Bump_Tree",
+      "GUID": "{A743F40E-3B07-407B-BCF2-82417808B6EE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.403188",
+      "DurationMax": "1.403188",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "6533187",
+        "Language": "SFX",
+        "ShortName": "Bump Tree.wav",
+        "Path": "SFX\\Bump Tree_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1348534859",
+      "Name": "Play_SFX_Butterfly_Explosion",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Butterfly_Explosion",
+      "GUID": "{D9C0A680-239F-46A8-B8E4-AADC05EDD248}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.387596",
+      "DurationMax": "0.387596",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "953988990",
+        "Language": "SFX",
+        "ShortName": "Butterfly Explosion.wav",
+        "Path": "SFX\\Butterfly Explosion_2B59D062.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2514707895",
+      "Name": "Play_SFX_Explosion",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Explosion",
+      "GUID": "{0221FD4F-D18A-459A-82F8-040AD1F0436E}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.243250",
+      "DurationMax": "1.243250",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "410863519",
+        "Language": "SFX",
+        "ShortName": "Session - Explosion-001.wav",
+        "Path": "SFX\\Session - Explosion-001_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3053734711",
+      "Name": "Play_SFX_Smash_Game",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Smash_Game",
+      "GUID": "{2C0F8119-9D47-4CB9-9B86-B04AFFDB80A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.196417",
+      "DurationMax": "1.196417",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1068693823",
+        "Language": "SFX",
+        "ShortName": "Super Smash Bros - Game !.wav",
+        "Path": "SFX\\Super Smash Bros - Game !_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1064155259",
+      "Name": "Play_SFX_Success_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_SFX_Success_01",
+      "GUID": "{46666543-B503-4A52-9543-BA257CB06E08}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.515479",
+      "DurationMax": "3.515479",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "456457650",
+        "Language": "SFX",
+        "ShortName": "Success 01.wav",
+        "Path": "SFX\\Success 01_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "745563126",
+      "Name": "Play_UI_Validation",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_UI_Validation",
+      "GUID": "{391DC1BB-067A-4084-ABC7-C79F2D19ECDE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.524938",
+      "DurationMax": "0.524938",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "854199478",
+        "Language": "SFX",
+        "ShortName": "UI Sound.wav",
+        "Path": "SFX\\UI Sound_10C4C929.wem"
        }
       ]
      }
