@@ -41,10 +41,10 @@ public class SpriteFlash : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    
+
+/*
     void Update()
     {
-        /*
         // DEBUG: Input used for test only
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -56,8 +56,9 @@ public class SpriteFlash : MonoBehaviour
         /*if (Keyboard.current.spaceKey.wasPressedThisFrame && !isFlashing && !isBlinking)
         {
             Flash();
-        }*/
+        }
     }
+*/
 
     /// <summary>
     /// Calls the DoFlash() or DoBlink() functions to make the current GameObject's SpriteRenderer flash or blink

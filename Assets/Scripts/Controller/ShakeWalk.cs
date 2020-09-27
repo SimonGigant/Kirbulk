@@ -11,6 +11,8 @@ public class ShakeWalk : MonoBehaviour
         Gamefeel.Instance.InitScreenshake(0.15f, 0.5f);
         float sign = GetComponentInParent<SpriteRenderer>().flipX ? -1 : 1f;
         Instantiate(stomp, transform.position + new Vector3(1f * sign, 1.5f, 0.01f), transform.rotation);
+
+        SoundManager.PlaySound("Play_Footsteps_Gravel", gameObject);
     }
 
     public void BigShake()

@@ -46,4 +46,4 @@ MonoBehaviour:
   birdPrefabs:
   - {fileID: 7589096767452425836, guid: af151153174518744b336dc2f05a70e7, type: 3}
   - {fileID: 6315419072762470164, guid: 23a2a8793230cdd4aba582f81d5f1d2f, type: 3}
-  - {fileID: 355207427810632717, guid: 1c253730eeac8c6458fd253a91ae0769, type: 3}
+  timeBetweenSpawns: 10

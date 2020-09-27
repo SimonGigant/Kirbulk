@@ -13,7 +13,7 @@ public class BirdAI : MonoBehaviour
 
     void Start()
     {
-        speed = Random.Range(1f, 3f);
+        speed = Random.Range(2f, 4f);
 
         if (transform.position.x > 0) // RIGHT to LEFT
         {
@@ -56,6 +56,9 @@ public class BirdAI : MonoBehaviour
         {
             Instantiate(birdDeathParticles, transform.position, Quaternion.identity);
             
+            if (!SoundManager.IsEventPlayingOnGameObject("Play_SFX_Butterfly_Explosion", gameObject))
+                SoundManager.PlaySound("Play_SFX_Butterfly_Explosion", gameObject);
+
             Destroy(gameObject);
         }
     }

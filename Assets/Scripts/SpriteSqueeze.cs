@@ -18,15 +18,24 @@ public class SpriteSqueeze : MonoBehaviour
     [SerializeField] float squeezeDuration = 1f;
 
     private bool isSqueezing = false;
-    
+
+/*
     void Update()
     {
         // DEBUG: Input used for test only
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && !isSqueezing)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Squeeze();
+        }
+        */
+
+        // DEBUG: Input used for test only
+        /*if (Keyboard.current.spaceKey.wasPressedThisFrame && !isFlashing && !isBlinking)
         {
             Squeeze();
         }
     }
+*/
 
     public void Squeeze()
     {

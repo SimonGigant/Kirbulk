@@ -55,6 +55,8 @@ GameObject:
   - component: {fileID: 2642530756308111152}
   - component: {fileID: 2642530756308111155}
   - component: {fileID: 2642530756308111153}
+  - component: {fileID: 7112851962277282789}
+  - component: {fileID: 8743754912173915537}
   m_Layer: 0
   m_Name: lamp
   m_TagString: Untagged
@@ -153,3 +155,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.49585, y: 1.7597466}
   m_EdgeRadius: 0
+--- !u!114 &7112851962277282789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2642530756308111154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0788bd53a2a1fd74a868374691219e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8743754912173915537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2642530756308111154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93cf7a508eff5743bd9ff3eac522ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squeezeDirection: 1
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1.1993113
+      outSlope: -1.1993113
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.16070545
+      value: 0.80726415
+      inSlope: 0.07108337
+      outSlope: 0.07108337
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.49619722
+      value: 1.257319
+      inSlope: -0.21240193
+      outSlope: -0.21240193
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.76072544
+      value: 0.7900876
+      inSlope: -0.44449753
+      outSlope: -0.44449753
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.8772868
+      outSlope: 0.8772868
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  squeezeDuration: 0.5

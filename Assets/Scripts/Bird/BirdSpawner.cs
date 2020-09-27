@@ -22,7 +22,7 @@ public class BirdSpawner : MonoBehaviour
             float isLeftOrRight = Random.Range(-1f, 1f);
 
             Vector3 positionToInstantiate =
-                new Vector3((isLeftOrRight < 0f ? -12f : 12f), Random.Range(-4f, 4f), 0f);
+                new Vector3((isLeftOrRight < 0f ? -20f : 20f), Random.Range(-4f, 4f), 0f);
 
             Instantiate(birdToInstantiate, positionToInstantiate, Quaternion.identity);
 

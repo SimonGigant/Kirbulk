@@ -8,5 +8,7 @@ public class Flower : MonoBehaviour
     {
         GetComponent<Animator>().SetTrigger("Explode");
         Gamefeel.Instance.InitScreenshake(1f, 0.7f);
+
+        SoundManager.PlaySound("Play_Footsteps_Grass", gameObject);
     }
 }
