@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 244383880}
   - component: {fileID: 244383882}
   - component: {fileID: 244383883}
+  - component: {fileID: 244383884}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -262,6 +263,89 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &244383884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244383879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93cf7a508eff5743bd9ff3eac522ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squeezeDirection: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.40761998
+      outSlope: 0.40761998
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.09133774
+      value: 1.0372311
+      inSlope: -0.008898318
+      outSlope: -0.008898318
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2759651
+      value: 0.95868754
+      inSlope: -0.018762708
+      outSlope: -0.018762708
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.41282317
+      value: 1.0117736
+      inSlope: 0.12580156
+      outSlope: 0.12580156
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5779547
+      value: 0.9892681
+      inSlope: -0.029718067
+      outSlope: -0.029718067
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7097292
+      value: 0.99939525
+      inSlope: 0.039467677
+      outSlope: 0.039467677
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.002083395
+      outSlope: 0.002083395
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  squeezeDuration: 1
 --- !u!1 &1902164558
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +541,10 @@ PrefabInstance:
     - target: {fileID: 4990207572461472180, guid: 69ee4330e5ac077409151cb2c84af8c5, type: 3}
       propertyPath: m_Name
       value: BirdSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990207572461472180, guid: 69ee4330e5ac077409151cb2c84af8c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4990207572461472202, guid: 69ee4330e5ac077409151cb2c84af8c5, type: 3}
       propertyPath: timeBetweenSpawns
