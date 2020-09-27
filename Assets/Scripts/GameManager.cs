@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -23,6 +24,14 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Update() {
+        float tValue = Keyboard.current.tKey.isPressed ? 1f : 0f;
+        if (tValue == 1) {
+//            LoadLevel("StoneTestScene");
+            QuitGame();
+        }
+    }
+
     public void LoadLevel(string sceneName) {
         StartCoroutine(CinematicLoadLevel(sceneName));
     }
@@ -32,29 +41,13 @@ public class GameManager : MonoBehaviour {
     }
     
     IEnumerator CinematicLoadLevel(string sceneName) {
-        float lerp = 0;
-        while (lerp < 1) {
-            imagetofade.color *= 1-lerp;
-            lerp += Time.deltaTime;
-            yield return new WaitForSeconds(0.01f);
-        }
+        yield return FadeIn();
         SceneManager.LoadSceneAsync(sceneName);
-        lerp = 0;
-        while (lerp < 1) {
-            imagetofade.color *= 1-lerp;
-            lerp += Time.deltaTime;
-            yield return new WaitForSeconds(0.01f);
-        }
+        yield return FadeOut();
     }
     
     IEnumerator CinematicQuitGame() {
-        float lerp = 0;
-        while (lerp < 1) {
-            imagetofade.color *= 1-lerp;
-            lerp += Time.deltaTime;
-            yield return new WaitForSeconds(0.01f);
-        }
-        
+        yield return FadeIn();
         #if UNITY_EDITOR
             // Application.Quit() does not work in the editor so
             // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
@@ -62,6 +55,34 @@ public class GameManager : MonoBehaviour {
         #else
             Application.Quit();
         #endif
+    }
+
+    private IEnumerator FadeIn() {
+        float start = Time.time;
+        float duration = 1;
+        float elapsed = 0;
+        while (elapsed < duration) {
+            // calculate how far through we are
+            elapsed = Time.time - start;
+            float normalisedTime = Mathf.Clamp(elapsed / duration, 0, 1);
+            imagetofade.color = Color.Lerp(Color.clear, Color.black, normalisedTime);
+            // wait for the next frame
+            yield return null;
+        }
+    }
+    
+    private IEnumerator FadeOut() {
+        float start = Time.time;
+        float duration = 1;
+        float elapsed = 0;
+        while (elapsed < duration) {
+            // calculate how far through we are
+            elapsed = Time.time - start;
+            float normalisedTime = Mathf.Clamp(elapsed / duration, 0, 1);
+            imagetofade.color = Color.Lerp(Color.black, Color.clear, normalisedTime);
+            // wait for the next frame
+            yield return null;
+        }
     }
     
 }
