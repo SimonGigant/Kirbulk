@@ -19,7 +19,9 @@ public class Doggo : MonoBehaviour
 
     public void Explosion()
     {
-        GameObject.Instantiate(explosion, transform.position + Vector3.up * 4.1f, Quaternion.identity);
+        GameObject.Instantiate(explosion, transform.position + Vector3.up * 3.9f, Quaternion.identity);
+        Gamefeel.Instance.InitScreenshake(2f, 2f);
+        Gamefeel.Instance.InitFreezeFrame(0.3f, 0.01f);
     }
 
     public void Waf()

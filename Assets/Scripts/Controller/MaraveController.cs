@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public enum MaraveState { Idle, Cutscene }
 public enum ActionState { None = 0, CarryWatercan = 1, Water = 2, Pet = 3 }
@@ -37,6 +38,10 @@ public class MaraveController : MonoBehaviour
             UnlockWatercan();
         if (Keyboard.current.backspaceKey.isPressed)
             RemoveWatercan();
+        if (Keyboard.current.rKey.isPressed)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     private void ChangeAnimator()
@@ -131,11 +136,12 @@ public class MaraveController : MonoBehaviour
         actionState = ActionState.None;
     }
 
-    public void Pet()
+    public void Pet(bool right)
     {
+        rend.flipX = !right;
         actionState = ActionState.Pet;
         state = MaraveState.Cutscene;
-        StartCoroutine(DelayBeforeComingBackToIdle(2f));
+        StartCoroutine(DelayBeforeComingBackToIdle(4f));
         animator.SetTrigger("ChangingAction");
     }
 

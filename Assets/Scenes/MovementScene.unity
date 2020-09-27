@@ -449,7 +449,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.034065723, y: 0.11358023}
+  m_Offset: {x: 0.13570929, y: -0.0026125908}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -460,7 +460,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.338462, y: 1.4543238}
+  m_Size: {x: 5.6453075, y: 3.2553072}
   m_EdgeRadius: 0
 --- !u!114 &1632738837
 MonoBehaviour:
@@ -775,11 +775,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfFlash: 0
   flashColor: {r: 0.4339623, g: 0.15720895, b: 0.15720895, a: 1}
-  flashDuration: 0.2
+  flashDuration: 0.7
   blinkDuration: 0.1
   shouldShake: 1
-  shakeSpeed: 80
-  shakeStrength: 0.1
+  shakeSpeed: 100
+  shakeStrength: 0.5
 --- !u!114 &1947403084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,6 +965,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[0].inSlope
+      value: -6.7476773
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[0].outSlope
+      value: -6.7476773
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[1].value
+      value: 0.2054367
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[1].time
+      value: 0.1177536
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].inSlope
+      value: -0.25524625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].outSlope
+      value: -0.25524625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].inWeight
+      value: 0.5027672
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[2].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[1].inSlope
+      value: -0.82688946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[1].outSlope
+      value: -0.82688946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036498832135686741, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
+      propertyPath: thisFreezeCurve.m_Curve.Array.data[1].outWeight
+      value: 0.1774797
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5daf7e2f713bf0b468400f31ef225447, type: 3}
 --- !u!1001 &3320197319074029685
@@ -980,11 +1040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3320197318821026855, guid: 34c276f823f62e64dbd958a138b2bb3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.51
+      value: 8.26
       objectReference: {fileID: 0}
     - target: {fileID: 3320197318821026855, guid: 34c276f823f62e64dbd958a138b2bb3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.33
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: 3320197318821026855, guid: 34c276f823f62e64dbd958a138b2bb3d, type: 3}
       propertyPath: m_LocalPosition.z

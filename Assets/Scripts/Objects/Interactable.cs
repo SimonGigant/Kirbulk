@@ -44,6 +44,6 @@ public class Interactable : MonoBehaviour
         interacted = true;
         whenInteracted.Invoke();
         if (pet)
-            marave.Pet();
+            marave.Pet(transform.position.x > marave.transform.position.x);
     }
 }
