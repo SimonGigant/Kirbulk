@@ -1,14 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     public static GameManager
         instance = null;
 
-    private Camera m_MainCamera;
-
+    public Image imagetofade;
 
     void Awake() {
 //        Debug.Log("init GameManager");
@@ -22,21 +21,47 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
-
-        m_MainCamera = Camera.main;
     }
 
-    public void LoadLevel(string name) {
-        SceneManager.LoadSceneAsync(name);
+    public void LoadLevel(string sceneName) {
+        StartCoroutine(CinematicLoadLevel(sceneName));
     }
 
     public void QuitGame() {
+        StartCoroutine(CinematicQuitGame());
+    }
+    
+    IEnumerator CinematicLoadLevel(string sceneName) {
+        float lerp = 0;
+        while (lerp < 1) {
+            imagetofade.color *= 1-lerp;
+            lerp += Time.deltaTime;
+            yield return new WaitForSeconds(0.01f);
+        }
+        SceneManager.LoadSceneAsync(sceneName);
+        lerp = 0;
+        while (lerp < 1) {
+            imagetofade.color *= 1-lerp;
+            lerp += Time.deltaTime;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+    
+    IEnumerator CinematicQuitGame() {
+        float lerp = 0;
+        while (lerp < 1) {
+            imagetofade.color *= 1-lerp;
+            lerp += Time.deltaTime;
+            yield return new WaitForSeconds(0.01f);
+        }
+        
         #if UNITY_EDITOR
-                // Application.Quit() does not work in the editor so
-                // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
-                UnityEditor.EditorApplication.isPlaying = false;
+            // Application.Quit() does not work in the editor so
+            // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
+            UnityEditor.EditorApplication.isPlaying = false;
         #else
             Application.Quit();
         #endif
     }
+    
 }
