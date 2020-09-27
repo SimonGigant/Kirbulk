@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab75e7b9841fe844bc8e34bc4f3b09b, type: 3}
-  m_Name: TestBicrave
+  m_Name: Dialog2
   m_EditorClassIdentifier: 
   dialogues:
   - overloadName: 0
     overloadedName: 
     character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
-    emotionID: 1
-    mirror: 1
-    leftSide: 0
-    text: ~Mmmmmmmmmmmhhhh...~
+    emotionID: 4
+    mirror: 0
+    leftSide: 1
+    text: DOG HAPPY, MARAVE TOO!
     emphasis: 
     size: 
     effect: 
     speed: 
   - overloadName: 0
     overloadedName: 
-    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
     emotionID: 2
     mirror: 0
     leftSide: 0
-    text: "\xB0*Ah*!\xB0"
+    text: '*Oh my*-! What... The...'
     emphasis: 
     size: 
     effect: 
@@ -38,10 +38,32 @@ MonoBehaviour:
   - overloadName: 0
     overloadedName: 
     character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 1
+    mirror: 0
+    leftSide: 1
+    text: DOG NO HAPPY??
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
     emotionID: 0
     mirror: 0
     leftSide: 0
-    text: '*^BONK!^*'
+    text: Erm. Let's say, kind of. At least he did not suffer much.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 5
+    mirror: 0
+    leftSide: 1
+    text: GOOD BOY. VERY GOOD BOY.
     emphasis: 
     size: 
     effect: 

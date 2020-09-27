@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab75e7b9841fe844bc8e34bc4f3b09b, type: 3}
+  m_Name: Dialog5
+  m_EditorClassIdentifier: 
+  dialogues:
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 6
+    mirror: 0
+    leftSide: 1
+    text: OH! KID ALONE!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 1
+    text: MARAVE FRIEND WITH KID!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 0
+    text: How about no. Like no. You won't even approach that kid.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 6
+    mirror: 0
+    leftSide: 1
+    text: "BUT KID \xB0SAD\xB0! MARAVE ONLY WANTS TO-"
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 0
+    text: No is no! I don't care if he's alone. You can't get close to him.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 6
+    mirror: 0
+    leftSide: 1
+    text: SOMETIMES, MARAVE DOES FEEL ALONE.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 7
+    mirror: 0
+    leftSide: 1
+    text: SOMETIMES, MARAVE FEELS SO ALONE HE SPEAKS TO HIMSELF.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 0
+    mirror: 0
+    leftSide: 0
+    text: But... I....
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 6
+    mirror: 0
+    leftSide: 1
+    text: MARAVE ONLY WANTS TO MAKE KID GO SMILE.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 3
+    mirror: 0
+    leftSide: 0
+    text: Well, Ok, you can play seesaw with him.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 5
+    mirror: 0
+    leftSide: 1
+    text: SEE-SAW!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 2
+    mirror: 0
+    leftSide: 0
+    text: Oh, dear god, oh no nono! Don't hit him!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 0
+    text: You're only going to play calmly on this peaceful seesaw in this kid's
+      garden. You will go ~very slowly~, and careful with this kid while a "safe
+      meter" between you and him.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 1
+    text: MARAVE UNDERSTANDS. MARAVE HAPPY. MARAVE IS PRO!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 3
+    mirror: 0
+    leftSide: 0
+    text: Yeah yeah, go on. Marave pro.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 5
+    mirror: 0
+    leftSide: 1
+    text: MARAVE DO HIS BEST TO KID HAPPY.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 1
+    mirror: 0
+    leftSide: 0
+    text: I'm counting on you.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 

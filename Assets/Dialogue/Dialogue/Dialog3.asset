@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab75e7b9841fe844bc8e34bc4f3b09b, type: 3}
+  m_Name: Dialog3
+  m_EditorClassIdentifier: 
+  dialogues:
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 1
+    text: MARAVE LIKEY TINY KITTENS.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 0
+    mirror: 0
+    leftSide: 0
+    text: "Uuuuh. \xB0Well\xB0. Ok. Yeah. Is there anything else that you like? Like
+      an object or anything that is not a \xB0cute\xB0 living being?"
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 4
+    mirror: 0
+    leftSide: 1
+    text: MARAVE LIKEY FLOWER.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 3
+    mirror: 0
+    leftSide: 0
+    text: Yes, ~perfect!~ You can take a look up there if you want.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 2dbcaf556b3ac6b4b94d09e46fe6ae21, type: 2}
+    emotionID: 2
+    mirror: 0
+    leftSide: 1
+    text: GARDENER NOT THERE, MARAVE GREEN THUMB!
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
+  - overloadName: 0
+    overloadedName: 
+    character: {fileID: 11400000, guid: 379381ea96544434aae637abf57b4e3b, type: 2}
+    emotionID: 0
+    mirror: 0
+    leftSide: 0
+    text: Ah shit, here we go again.
+    emphasis: 
+    size: 
+    effect: 
+    speed: 
