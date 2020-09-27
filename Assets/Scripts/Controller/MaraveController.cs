@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public enum MaraveState { Idle, Cutscene }
-public enum ActionState { None = 0, CarryWatercan = 1, Water = 2 }
+public enum ActionState { None = 0, CarryWatercan = 1, Water = 2, Pet = 3 }
 
 public class MaraveController : MonoBehaviour
 {
@@ -129,6 +129,20 @@ public class MaraveController : MonoBehaviour
     public void RemoveWatercan()
     {
         actionState = ActionState.None;
+    }
+
+    public void Pet()
+    {
+        actionState = ActionState.Pet;
+        state = MaraveState.Cutscene;
+        StartCoroutine(DelayBeforeComingBackToIdle(2f));
+        animator.SetTrigger("ChangingAction");
+    }
+
+    private IEnumerator DelayBeforeComingBackToIdle(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        state = MaraveState.Idle;
     }
 
     //moveValue must have a norm <= 1

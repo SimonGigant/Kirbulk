@@ -37,7 +37,7 @@ public class ZoomManager : MonoBehaviour {
 
     private void Start() {
         initPosCam = m_MainCamera.transform.position;
-        StartZoom();
+        //StartZoom();
     }
 
     public void StartZoom() {
