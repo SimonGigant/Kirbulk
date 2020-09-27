@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\</ProjectRoot>
+		<SourceFilesRoot>D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PROJETS EN COURS\ENJAM 2020\Kirbulk\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\PROJETS EN COURS\ENJAM 2020\Wwise\ENJAM 2020\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1744675613" GUID="{7D81F3A5-E050-456D-8D49-2EE2D73F84C2}" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Kirbulk</ObjectPath>
+			<ShortName>Kirbulk</ShortName>
+			<Path>Kirbulk.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" GUID="{BE1F377B-FF29-4990-87CE-A10A34E4D38A}" DurationType="OneShot" DurationMin="70.144920" DurationMax="70.144920">
+					<IncludedMemoryFiles>
+						<File Id="678776388" Language="SFX">
+							<ShortName>Lofi Jazz Test Rapidos.wav</ShortName>
+							<Path>SFX\Lofi Jazz Test Rapidos_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
