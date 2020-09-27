@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     private List<Intonation> intonations;
     private List<EffectOnSyllab> effectOnSyllabs;
 
+    public string SceneAfterDialog = null;
 
 
     private void Start()
@@ -93,6 +94,8 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.lepide.state = PlayerState.Idle;*/
         transform.DOLocalMoveY(-1000f, 1.8f).SetEase(Ease.InOutQuad);
         yield return new WaitForSeconds(duration);
+        if(SceneAfterDialog != null && !SceneAfterDialog.Equals(""))
+            GameManager.instance.LoadLevel(SceneAfterDialog);
         Destroy(transform.parent.gameObject);
     }
 

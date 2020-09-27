@@ -441,6 +441,75 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &287923923
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 488703704049078521, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_Name
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078524, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: dialogueSequence
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d2c6b95bc35ddd4d8a0936f01105e49, type: 2}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078525, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078526, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_Size.x
+      value: 28.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 488703704049078526, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
+      propertyPath: m_Size.y
+      value: 28.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 916ff6a4fdbdcaa43b0cd31c3de440e8, type: 3}
 --- !u!1001 &307638184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22741,7 +22810,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1289483431
 PrefabInstance:
@@ -22844,7 +22913,7 @@ Transform:
   - {fileID: 451856566}
   - {fileID: 770684178}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1600543162
 PrefabInstance:
@@ -23338,6 +23407,7 @@ GameObject:
   - component: {fileID: 936436707513192195}
   - component: {fileID: 936436707513192194}
   - component: {fileID: 936436707513192196}
+  - component: {fileID: 936436707513192197}
   m_Layer: 0
   m_Name: TapeCul
   m_TagString: Untagged
@@ -23422,6 +23492,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 936436707513192197}
+        m_TargetAssemblyTypeName: DialogueSpawn, Assembly-CSharp
+        m_MethodName: StartDialogueAfterDelay
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   singleTimeInteraction: 1
   pet: 0
   tapecul: 1
@@ -23439,6 +23521,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version1: {fileID: 631072819}
   version2: {fileID: 1096207407}
+--- !u!114 &936436707513192197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936436707513192193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1189e7780d3a54fb2f80c1ab361118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabDialogueSystem: {fileID: 8624697286553805043, guid: 89347a86bcc12444daf2e38caedd25e5, type: 3}
+  dialogueSequence: {fileID: 11400000, guid: ba110281bead6374ba53bcfa37dda33f, type: 2}
+  scene: Scene_outro
 --- !u!4 &936436707513192198
 Transform:
   m_ObjectHideFlags: 0
@@ -23454,7 +23551,7 @@ Transform:
   - {fileID: 631072820}
   - {fileID: 1096207408}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2948222890560463175
 PrefabInstance:
