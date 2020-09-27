@@ -58,11 +58,14 @@ public class MaraveController : MonoBehaviour
             actionState = ActionState.CarryWatercan;
         }
 
+        /*
+           // CA ATTENDRA UNE V2
         if (actionState == ActionState.Water && !particleSys.isPlaying)
             particleSys.Play();
         else if (particleSys.isPlaying)
             particleSys.Stop();
-        
+        */
+
         if (actionState != prevActionState)
             animator.SetTrigger("ChangingAction");
         animator.SetInteger("Action", (int)actionState);
