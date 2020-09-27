@@ -50,8 +50,10 @@ public class ZoomManager : MonoBehaviour {
 
     IEnumerator CinematicZoom() {
         for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / timerZoom) {
-            m_MainCamera.transform.position = Vector3.Lerp(m_MainCamera.transform.position,
-                target.position + Vector3.back, 3f * Time.deltaTime);
+            Vector3 newPosition = Vector3.Lerp(m_MainCamera.transform.position,
+                target.position - Vector3.forward*target.position.z, (1/timerZoom) * 3f * Time.deltaTime);
+            newPosition.z = -100f;
+            m_MainCamera.transform.position = newPosition;
             m_MainCamera.orthographicSize -= evaluateCurve(t) * speedCoeff * Time.deltaTime;
             yield return null;
         }
