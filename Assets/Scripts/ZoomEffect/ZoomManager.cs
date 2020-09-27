@@ -17,6 +17,7 @@ public class ZoomManager : MonoBehaviour {
 
     private Camera m_MainCamera;
     private Vector2 initPosCam;
+    private float initialSize;
     private bool isZoom = true;
 
     private void Awake() {
@@ -49,6 +50,8 @@ public class ZoomManager : MonoBehaviour {
     }
 
     IEnumerator CinematicZoom() {
+        initialSize = m_MainCamera.orthographicSize;
+
         for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / timerZoom) {
             Vector3 newPosition = Vector3.Lerp(m_MainCamera.transform.position,
                 target.position - Vector3.forward*target.position.z, (1/timerZoom) * 3f * Time.deltaTime);
@@ -63,6 +66,7 @@ public class ZoomManager : MonoBehaviour {
             ReverseZoom();
         }
     }
+    
 
     IEnumerator CinematicReverseZoom() {
         for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / timerZoom) {
@@ -72,6 +76,7 @@ public class ZoomManager : MonoBehaviour {
             }
 
             m_MainCamera.orthographicSize += evaluateReverseCurve(t) * speedCoeff * Time.deltaTime;
+            m_MainCamera.orthographicSize = Mathf.Lerp(m_MainCamera.orthographicSize, initialSize, 1f * Time.deltaTime);
             yield return null;
         }
     }

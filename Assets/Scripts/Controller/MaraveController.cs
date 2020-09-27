@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public enum MaraveState { Idle, Cutscene }
-public enum ActionState { None = 0, CarryWatercan = 1, Water = 2, Pet = 3 }
+public enum ActionState { None = 0, CarryWatercan = 1, Water = 2, Pet = 3, KneeDrop = 4 }
 
 public class MaraveController : MonoBehaviour
 {

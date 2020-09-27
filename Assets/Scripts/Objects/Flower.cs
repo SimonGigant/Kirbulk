@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Flower : MonoBehaviour
 {
-    public void Test()
+    public void Smash()
     {
-        Debug.Log("Mes couilles");
+        GetComponent<Animator>().SetTrigger("Explode");
+        Gamefeel.Instance.InitScreenshake(1f, 0.7f);
     }
 }

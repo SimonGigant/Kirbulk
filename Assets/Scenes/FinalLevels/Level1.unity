@@ -10828,7 +10828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6609786187293419454, guid: 4db1bb2f888ed1443b9ee924f09b8893, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.59
+      value: 4.22
       objectReference: {fileID: 0}
     - target: {fileID: 6609786187293419454, guid: 4db1bb2f888ed1443b9ee924f09b8893, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10878,5 +10878,9 @@ PrefabInstance:
       propertyPath: initTransformCam
       value: 
       objectReference: {fileID: 1698533109}
+    - target: {fileID: 6609786187507497697, guid: 4db1bb2f888ed1443b9ee924f09b8893, type: 3}
+      propertyPath: ReverseStartTimer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4db1bb2f888ed1443b9ee924f09b8893, type: 3}
