@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictorScenes/ChangeTestScene.unity
     guid: dd7ab781b71e44b49976e8f1b350ce83
+  - enabled: 1
+    path: Assets/Scenes/VictorScenes/StoneTestScene.unity
+    guid: 55bf3709c10541e438d1c3b889f7c8da
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7cdaca62a3035a348923c56a82292a35, type: 2}
