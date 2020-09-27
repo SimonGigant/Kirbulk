@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2684443567036133178}
   - component: {fileID: 1675484246330614775}
   m_Layer: 0
-  m_Name: BirdDeathParticles
+  m_Name: PapillonDeathParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1481,7 +1481,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 7a244895d56b7bd41b730a17c0ee6f26, type: 3}
+    - sprite: {fileID: 21300000, guid: 941afc4fc53c4fa488921b01ebc215c2, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
