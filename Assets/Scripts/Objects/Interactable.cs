@@ -12,6 +12,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private bool singleTimeInteraction;
     private bool interacted = false;
     public bool pet = false;
+    public bool tapecul = false;
 
     /*[SerializeField] private Material highlight;
     private Material basicMaterial;*/
@@ -45,5 +46,7 @@ public class Interactable : MonoBehaviour
         whenInteracted.Invoke();
         if (pet)
             marave.Pet(transform.position.x > marave.transform.position.x);
+        if(tapecul)
+            marave.ElbowDrop(transform.position.x > marave.transform.position.x);
     }
 }

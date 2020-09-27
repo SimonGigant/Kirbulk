@@ -10,7 +10,7 @@ public enum ActionState { None = 0, CarryWatercan = 1, Water = 2, Pet = 3, KneeD
 public class MaraveController : MonoBehaviour
 {
     //Values
-    private float moveSpeed = 15f;
+    private float moveSpeed = 20f;
     private Rigidbody2D rb;
     private SpriteRenderer rend;
     private Animator animator;
@@ -140,6 +140,15 @@ public class MaraveController : MonoBehaviour
     {
         rend.flipX = !right;
         actionState = ActionState.Pet;
+        state = MaraveState.Cutscene;
+        StartCoroutine(DelayBeforeComingBackToIdle(4f));
+        animator.SetTrigger("ChangingAction");
+    }
+
+    public void ElbowDrop(bool right)
+    {
+        rend.flipX = !right;
+        actionState = ActionState.KneeDrop;
         state = MaraveState.Cutscene;
         StartCoroutine(DelayBeforeComingBackToIdle(4f));
         animator.SetTrigger("ChangingAction");

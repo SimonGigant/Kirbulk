@@ -12,4 +12,10 @@ public class ShakeWalk : MonoBehaviour
         float sign = GetComponentInParent<SpriteRenderer>().flipX ? -1 : 1f;
         Instantiate(stomp, transform.position + new Vector3(1f * sign, 1.5f, 0.01f), transform.rotation);
     }
+
+    public void BigShake()
+    {
+        Gamefeel.Instance.InitScreenshake(1f, 4f);
+        Gamefeel.Instance.InitFreezeFrame(0.1f, 0.01f);
+    }
 }
