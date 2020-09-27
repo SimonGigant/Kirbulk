@@ -8,16 +8,18 @@ public class LampFall : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!lampHasFallen)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Player"))
+            if (!lampHasFallen)
             {
-                float zRotation = (collision.gameObject.transform.position.x > transform.parent.position.x ? 80f : -80f );
+                float zRotation = (collision.gameObject.transform.position.x > transform.parent.position.x ? 93.5f : -93.5f);
 
                 transform.parent.localEulerAngles = new Vector3(transform.parent.localEulerAngles.x, transform.parent.localEulerAngles.y, zRotation);
 
-                // A tester in-game hein
+                lampHasFallen = true;
             }
+
+            GetComponent<SpriteSqueeze>().Squeeze();
         }
     }
 }
