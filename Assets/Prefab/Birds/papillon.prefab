@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6315419072762470167}
   - component: {fileID: 6315419072762470160}
   - component: {fileID: -1996311755870909529}
+  - component: {fileID: -160072255276582226}
   m_Layer: 0
   m_Name: papillon
   m_TagString: Untagged
@@ -133,3 +134,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-160072255276582226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315419072762470164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fcced92f9bd5841a93843e58973fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

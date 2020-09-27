@@ -17,9 +17,15 @@ public class LampFall : MonoBehaviour
                 transform.parent.localEulerAngles = new Vector3(transform.parent.localEulerAngles.x, transform.parent.localEulerAngles.y, zRotation);
 
                 lampHasFallen = true;
+                
+                if (!SoundManager.IsEventPlayingOnGameObject("Play_SFX_Lamp_Ground_Impact", gameObject))
+                    SoundManager.PlaySound("Play_SFX_Lamp_Ground_Impact", gameObject);
             }
 
             GetComponent<SpriteSqueeze>().Squeeze();
+
+            if (!SoundManager.IsEventPlayingOnGameObject("Play_SFX_Lamp_Bump", gameObject))
+                SoundManager.PlaySound("Play_SFX_Lamp_Bump", gameObject);
         }
     }
 }
