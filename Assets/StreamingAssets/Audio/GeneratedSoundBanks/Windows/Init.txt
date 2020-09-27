@@ -1,9 +1,12 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	1802970371	FX			\Kirbulk\FX	
-	2981377429	Ambiance			\Kirbulk\Ambiance	
-	3170124113	Voice			\Kirbulk\Voice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Kirbulk\Music	
+	4157353401	Master Audio			\Kirbulk\Master Audio	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1802970371	Fx			\Kirbulk\Master Audio\Fx	
+	2981377429	Ambiance			\Kirbulk\Master Audio\Ambiance	
+	3170124113	Voice			\Kirbulk\Master Audio\Voice	
+	3991942870	Music			\Kirbulk\Master Audio\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
