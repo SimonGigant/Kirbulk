@@ -29,5 +29,9 @@ MonoBehaviour:
     name: Sad
   - sprite: {fileID: 21300000, guid: b53f9e09a1dda4c4aa1f234fac2daefb, type: 3}
     name: Worry
+  - sprite: {fileID: 21300000, guid: 71e65ab33c34e0041bccb8e725302031, type: 3}
+    name: Discuss 5
+  - sprite: {fileID: 21300000, guid: 340c9fdcd5ada63479982bbf6958d700, type: 3}
+    name: Discuss 6
   characterName: Bicrave Marave
   color: {r: 0.82727355, g: 0.5158419, b: 0.8490566, a: 0}

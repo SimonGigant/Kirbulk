@@ -30,20 +30,21 @@ public class MaraveController : MonoBehaviour
         rend = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
         particleSys = GetComponentInChildren<ParticleSystem>();
+        GameManager.instance.marave = this;
     }
 
     private void Update()
     {
         InputManagement();
         ChangeAnimator();
-        if (Keyboard.current.enterKey.isPressed)
+        /*if (Keyboard.current.enterKey.isPressed)
             UnlockWatercan();
         if (Keyboard.current.backspaceKey.isPressed)
             RemoveWatercan();
         if (Keyboard.current.rKey.isPressed)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        }*/
     }
 
     private void ChangeAnimator()

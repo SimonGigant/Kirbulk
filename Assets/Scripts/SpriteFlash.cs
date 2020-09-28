@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -163,6 +165,7 @@ public class SpriteFlash : MonoBehaviour
     }
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(SpriteFlash))]
 public class SpriteFlashEditor : Editor
 {
@@ -200,3 +203,4 @@ public class SpriteFlashEditor : Editor
     }
 }
 
+#endif

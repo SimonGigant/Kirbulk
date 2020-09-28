@@ -43,10 +43,14 @@ public class DialogueManager : MonoBehaviour
     private List<EffectOnSyllab> effectOnSyllabs;
 
     public string SceneAfterDialog = null;
+    public bool inJojo = false;
+    public Animator jojoAnim;
 
 
     private void Start()
     {
+        if(GameManager.instance.marave != null)
+            GameManager.instance.marave.state = MaraveState.Cutscene;
         GetComponentInParent<Canvas>().worldCamera = Camera.main;
         scalePortrait = portrait.rectTransform.localScale.x;
         //GameManager.Instance.dialogueManager = this;
@@ -94,8 +98,21 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.lepide.state = PlayerState.Idle;*/
         transform.DOLocalMoveY(-1000f, 1.8f).SetEase(Ease.InOutQuad);
         yield return new WaitForSeconds(duration);
-        if(SceneAfterDialog != null && !SceneAfterDialog.Equals(""))
-            GameManager.instance.LoadLevel(SceneAfterDialog);
+        if (inJojo)
+        {
+            jojoAnim.SetBool("ActiveScene", true);
+            yield return new WaitForSeconds(15f);
+            if (SceneAfterDialog != null && !SceneAfterDialog.Equals(""))
+                GameManager.instance.LoadLevel(SceneAfterDialog);
+        }
+        else
+        {
+            if (SceneAfterDialog != null && !SceneAfterDialog.Equals(""))
+                GameManager.instance.LoadLevel(SceneAfterDialog);
+
+            if(GameManager.instance.marave != null)
+                GameManager.instance.marave.state = MaraveState.Idle;
+        }
         Destroy(transform.parent.gameObject);
     }
 

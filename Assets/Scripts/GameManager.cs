@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
         instance = null;
 
     public Image imagetofade;
+    public MaraveController marave;
+    public bool isCredits = false;
 
     void Awake() {
 //        Debug.Log("init GameManager");
@@ -22,6 +24,14 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
+        StartCoroutine(DelayBeforeEnd());
+    }
+
+    IEnumerator DelayBeforeEnd()
+    {
+        yield return new WaitForSeconds(30f);
+        if (isCredits)
+            LoadLevel("JojoPostCredit");
     }
 
     private void Update() {
