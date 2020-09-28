@@ -8,6 +8,8 @@ public class ShakeWalk : MonoBehaviour
 
     public void Step()
     {
+        if (GameManager.instance.isCredits)
+            return;
         Gamefeel.Instance.InitScreenshake(0.15f, 0.5f);
         float sign = GetComponentInParent<SpriteRenderer>().flipX ? -1 : 1f;
         Instantiate(stomp, transform.position + new Vector3(1f * sign, 1.5f, 0.01f), transform.rotation);

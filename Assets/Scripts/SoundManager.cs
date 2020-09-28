@@ -25,22 +25,27 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        AkSoundEngine.PostEvent("Play_Music", gameObject);
+        PlaySound("Play_Music", GameManager.instance.gameObject);
 
         switch (currentLevel)
         {
             case Level.ONE:
-                AkSoundEngine.PostEvent("Play_AMB_Centre_Ville", gameObject);
+                PlaySound("Play_AMB_Centre_Ville", GameManager.instance.gameObject);
                 break;
 
             case Level.TWO:
-                AkSoundEngine.PostEvent("Play_AMB_Garden_Forest", gameObject);
+                PlaySound("Play_AMB_Garden_Forest", GameManager.instance.gameObject);
                 break;
 
             case Level.THREE:
-                AkSoundEngine.PostEvent("Play_AMB_Parc_Enfant", gameObject);
+                PlaySound("Play_AMB_Parc_Enfant", GameManager.instance.gameObject);
                 break;
         }
+    }
+
+    public void StopMusic()
+    {
+        AkSoundEngine.PostEvent("Stop_Music", gameObject);
     }
 
     public static void PlaySound(string eventName, GameObject go)

@@ -24,4 +24,4 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 71a2e25f5b9dc6343991f926c61c6dd4, type: 3}
     name: Angy
   characterName: Brain
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}

@@ -34,4 +34,4 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 340c9fdcd5ada63479982bbf6958d700, type: 3}
     name: Discuss 6
   characterName: Bicrave Marave
-  color: {r: 0.82727355, g: 0.5158419, b: 0.8490566, a: 0}
+  color: {r: 0.9811321, g: 0.94882447, b: 0.26379493, a: 1}

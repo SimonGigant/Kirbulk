@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public Image imagetofade;
     public MaraveController marave;
     public bool isCredits = false;
+    public bool isMainMenu = false;
 
     void Awake() {
 //        Debug.Log("init GameManager");
@@ -24,7 +25,8 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
-        StartCoroutine(DelayBeforeEnd());
+        if (isCredits)
+            StartCoroutine(DelayBeforeEnd());
     }
 
     IEnumerator DelayBeforeEnd()
@@ -40,6 +42,13 @@ public class GameManager : MonoBehaviour {
 //            LoadLevel("StoneTestScene");
             QuitGame();
         }
+        else
+        {
+            if (isMainMenu && Keyboard.current.anyKey.isPressed)
+            {
+                LoadLevel("Level1");
+            }
+        }
     }
 
     public void LoadLevel(string sceneName) {
@@ -52,7 +61,20 @@ public class GameManager : MonoBehaviour {
     
     IEnumerator CinematicLoadLevel(string sceneName) {
         yield return FadeIn();
+        isCredits = false;
+        isMainMenu = false;
         SceneManager.LoadSceneAsync(sceneName);
+        if (sceneName.Equals("Scene_outro"))
+        {
+            isCredits = true;
+            StartCoroutine(DelayBeforeEnd());
+        }
+
+        if (sceneName.Equals("TitleScreen"))
+        {
+            isMainMenu = true;
+        }
+        yield return new WaitForSeconds(0.5f);
         yield return FadeOut();
     }
     
